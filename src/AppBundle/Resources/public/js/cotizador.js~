@@ -1,0 +1,87 @@
+var editableGrid;
+
+window.onload = function() {	
+	editableGrid = new EditableGrid("DemoGridJSON"); 
+	editableGrid.tableLoaded = function() { this.renderGrid("tablecontent", "testgrid"); };
+	var urlDatos = $("#tablecontent").data("url");
+	editableGrid.loadJSON(urlDatos);
+} 
+
+
+function add() {
+	editableGrid.addRow(2, {}, {}, false);
+}
+
+function confirmar() {
+	var url = $("#confirmar").data("url");
+	datos = JSON.stringify(editableGrid.data);
+
+	var url = url + "?datos=" + datos;
+	window.location.href = url;
+	
+}
+
+
+
+function autoComplete( parameters ){
+	var element = $( parameters.input );
+	var url		= parameters.url;
+
+	$.ajax({
+		url: url,
+		type: 'get',
+		dataType: 'json',
+		async: false,
+		cache: false
+	}).done (function(data){
+		result = data;
+	});
+
+
+	element.typeahead({
+		source: result,
+		limit: 10,
+		name: name,
+		afterSelect: function(data){
+			console.log(data);
+			// element.attr('data-parent',data.id);
+		}
+	});
+
+	return element;
+}
+
+autoComplete({
+	input: '#categoria',
+	url:	Routing.generate("getCategoriasJSON"),
+});
+
+var obras = autoComplete({
+	input: '#obra',
+	url:	Routing.generate("getObrasJSON"),
+});
+
+$('#categoria').on('change',function() {
+		$('#obra').val('');
+	});
+
+$('#categoria').on('focusout',function() {
+	var newSource;
+
+	var categoria = ('#categoria');
+
+	var url = Routing.generate('getObrasJSON', {categoria: categoria});
+
+	$.ajax({
+		url: url,
+		type: 'get',
+		dataType: 'json',
+		async: false,
+		cache: false,
+	}).done (function(data){
+		result = data;
+	});
+
+	obras.data('typeahead').source = result;
+		
+});

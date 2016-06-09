@@ -1,0 +1,142 @@
+Tabla Titulo Grupal ;Tabla secuencia;Tabla titulo concepto;Clave del concepto;Tabla Codigo Concepto;Tabla forma de distribucion;Tabla Atributo para cobrar;valor modulo
+;;;;;;;
+;;;;;;;
+Plano presentado el importe x m2 de la tasa del Art.318 del Código Fiscal (PVO);1;Plano presentado el importe x m2 de la tasa del Art.318 del Código Fiscal (PVO);1-1;05.01.01;adicional total;cantidad m2 pvo;-
+;;;;;;;
+;;;;;;;
+;;;;;;;
+Inst inflam. P/c/tanque corresp. inst. petróleo alimetan calderas, hornos, etc.;1;Inst inflam. P/c/tanque corresp. inst. petróleo alimetan calderas, hornos, etc.;2-1;05.02.17;Total;cantidad total;-
+Inst. inflamables. P/c/tanque corresp  inst. de nafta est de serv/garages.;1;Inst. inflamables. P/c/tanque corresp  inst. de nafta est de serv/garages.;3-1;05.02.18;Total;cantidad total;-
+Inst. inflam. P/c/tanque corresp. inst. solvente talleres de lav/planchado ropa.;1;Inst. inflam. P/c/tanque corresp. inst. solvente talleres de lav/planchado ropa.;4-1;05.02.19;Total;cantidad total;-
+Inst. inflamables. P/c/tanque corresp. a inst. de otros líq. inflamables en ind.;1;Inst. inflamables. P/c/tanque corresp. a inst. de otros líq. inflamables en ind.;5-1;05.02.20;Total;cantidad total;-
+Instalaciones de elevadores;1;Instalaciones de elevadores Hasta diez (10) paradas;6-1;05.02.21;detalle;cantidad total;-
+Instalaciones de elevadores;2;Instalaciones de elevadores Por c/parada en exceso de diez (10);6-2;05.02.22;0;cantidad total * cantidad en el rango;-
+Instalaciones de escaleras mecánicas por cada tramo;1;Instalaciones de escaleras mecánicas por cada tramo;7-1;05.02.23;Total;cantidad total;-
+Instalaciones de guarda mecanizada de vehículos por la instalación;1;Instalaciones de guarda mecanizada de vehículos por la instalación;8-1;05.02.24;Total;cantidad total;-
+Instalaciones de rampas moviles para vehiculos: por la Instalacion;1;Instalaciones de rampas moviles para vehiculos: por la Instalacion;9-1;05.02.25;Total;cantidad total;-
+Instalaciones de monta - autos Hidraulicos: por la Instalacion;1;Instalaciones de monta - autos Hidraulicos: por la Instalacion;10-1;05.02.26;Total;cantidad total;-
+Módulos de condiciones contra incendio. Uso Residencial - Extintores;1;Módulos de condiciones contra incendio. Uso Residencial - Extintores;11-1;05.02.35;Total;modulos Importetotal sin/rec;450
+Módulos de condiciones contra incendio. Uso Residencial - Hidrantes;1;Módulos de condiciones contra incendio. Uso Residencial - Hidrantes;12-1;05.02.35;detalle;modulos impMIn;450
+Módulos de condiciones contra incendio. Uso Residencial - Hidrantes;2;Exceso de 6 hidrantes p/c hidrante adicional. Uso Residencial;12-2;05.02.56;0;cantidad en el rango;-
+Módulos de condiciones contra incendio. Uso Residencial -  /rociadores/sprinklers;1;Módulos de condiciones contra incendio. Uso Residencial -  /rociadores/sprinklers;13-1;05.02.35;detalle;modulos impMIn;450
+Módulos de condiciones contra incendio. Uso Residencial -  /rociadores/sprinklers;2;Exceso de 100 cabezas /rociadores/sprinklers por c/adicional. Uso Residencial;13-2;05.02.57;0;cantidad en el rango;-
+Módulos de condiciones contra incendio. Uso Residencial - detectores;1;Módulos de condiciones contra incendio. Uso Residencial - detectores;14-1;05.02.35;detalle;modulos impMIn;450
+Módulos de condiciones contra incendio. Uso Residencial - detectores;2;Exceso de 50 detectores por c/adicional. Uso Residencial;14-2;05.02.58;0;cantidad en el rango;-
+Módulos de condiciones contra incendio. Uso Industrial/Depósitos/Comercial/Otros. -sistemas especiales;1;Módulos de condiciones contra incendio. Uso Industrial/Depósitos/Comercial/Otros. -sistemas especiales;15-1;05.02.55;Total;modulos Importetotal sin/rec;895
+Módulos de condiciones contra incendio. Uso Industrial/Depósitos/Comercial/Otros. -Extintores;1;Módulos de condiciones contra incendio. Uso Industrial/Depósitos/Comercial/Otros. -Extintores;16-1;05.02.55;Total;modulos Importetotal sin/rec;895
+Módulos de condiciones contra incendio. Uso Industrial/Depósitos/Comercial/Otros.  - Hidrantes;1;Módulos de condiciones contra incendio. Uso Industrial/Depósitos/Comercial/Otros.  - Hidrantes;17-1;05.02.55;detalle;modulos impMIn;895
+Módulos de condiciones contra incendio. Uso Industrial/Depósitos/Comercial/Otros.  - Hidrantes;2;Exceso de 6 hidrantes p/c hidrante adicional. Uso Industrial/Depósitos/Comercial/Otros;17-2;05.02.56;0;cantidad en el rango;-
+Módulos de condiciones contra incendio. Uso Industrial/Depósitos/Comercial/Otros -  /rociadores/sprinklers;1;Módulos de condiciones contra incendio. Uso Industrial/Depósitos/Comercial/Otros -  /rociadores/sprinklers;18-1;05.02.55;detalle;modulos impMIn;895
+Módulos de condiciones contra incendio. Uso Industrial/Depósitos/Comercial/Otros -  /rociadores/sprinklers;2;Exceso de 100 cabezas /rociadores/sprinklers por c/adicional. Uso Industrial/Depósitos/Comercial/Otros;18-2;05.02.57;0;cantidad en el rango;-
+Módulos de condiciones contra incendio. Uso Industrial/Depósitos/Comercial/Otros - detectores;1;Módulos de condiciones contra incendio. Uso Industrial/Depósitos/Comercial/Otros - detectores;19-1;05.02.55;detalle;modulos impMIn;895
+Módulos de condiciones contra incendio. Uso Industrial/Depósitos/Comercial/Otros - detectores;2;Exceso de 50 detectores por c/adicional. Uso Industrial/Depósitos/Comercial/Otros;19-2;05.02.58;0;cantidad en el rango;-
+;;;;;;;
+Módulos de condiciones contra incendio. Uso Residencial - Escaleras;1;Módulos de condiciones contra incendio. Uso Residencial - Escaleras;20-1;05.02.35;Total;modulos Importetotal sin/rec;450
+Módulos de condiciones contra incendio. Uso Industrial/Depósitos/Comercial/Otros. -Escaleras;1;Módulos de condiciones contra incendio. Uso Industrial/Depósitos/Comercial/Otros. -Escaleras;21-1;05.02.55;Total;modulos Importetotal sin/rec;895
+;;;;;;;
+Medios mecánicos de elevación p/Personas discapacitadas;1;Medios mecánicos de elevación p/Personas discapacitadas;22-1;05.02.51;Total;cantidad total;-
+P/reformas en ascensores 30 % de los der.de reg.que corresp. inst.de un ascensor;1;P/reformas en ascensores 30 % de los der.de reg.que corresp. inst.de un ascensor;23-1;05.02.52;Total;Importetotal sin/rec;-
+Ascensor de instalación temporaria para obras en construcción;1;Ascensor de instalación temporaria para obras en construcción;24-1;05.02.53;Total;cantidad total;-
+Montacargas de instalación temporaria para obras en construcción;1;Montacargas de instalación temporaria para obras en construcción;25-1;05.02.54;Total;cantidad total;-
+P/transf Inst eléctricas/electrome/térmicas e inflamables c/permiso.  30% de los derechos de inspección;1;P/transf Inst eléctricas/electrome/térmicas e inflamables c/permiso.  30% de los derechos de inspección;26-1;05.02.49;Total;Importetotal sin/rec;-
+Instalaciones eléctricas (vivienda)/Electromecánicas (vivienda y obra civil);1;Registro. Instalaciones eléctricas (vivienda)/Electromecánicas (vivienda y obra civil) hasta 10 Kw en viviendas ;27-1;05.02.59;detalle;modulos impMIn;1140
+Instalaciones eléctricas (vivienda)/Electromecánicas (vivienda y obra civil);2;Registro. Instalaciones eléctricas/Electromecánicas x los sig. 20 Kw, x cada Kw;27-2;05.02.60;0;cantidad en el rango;-
+Instalaciones eléctricas (vivienda)/Electromecánicas (vivienda y obra civil);3;Registro. Instalaciones eléctricas/Electromecánicas x los sig. 30 Kw, x cada Kw;27-3;05.02.61;0;cantidad en el rango;-
+Instalaciones eléctricas (vivienda)/Electromecánicas (vivienda y obra civil);4;Registro. Instalaciones eléctricas/Electromecánicas x los sig. 150 Kw, x cada Kw;27-4;05.02.62;0;cantidad en el rango;-
+Instalaciones eléctricas (vivienda)/Electromecánicas (vivienda y obra civil);5;Registro. Instalaciones eléctricas/Electromecánicas por cada Kw excedente;27-5;05.02.63;0;cantidad en el rango;-
+Inst. eléctricas en Loc. Com./indust/tall/depos./espectáculos púb. ;1;Inst. eléctricas en Loc. Com./indust/tall/depos./espectáculos púb. hasta 10 Kw;28-1;05.02.64;detalle;modulos impMIn;1405
+Inst. eléctricas en Loc. Com./indust/tall/depos./espectáculos púb. ;2;Inst. eléct. en loc. Com./ind./tall./depos./espect. púb. x sig. 40 Kw, x cada Kw;28-2;05.02.65;0;cantidad en el rango;-
+Inst. eléctricas en Loc. Com./indust/tall/depos./espectáculos púb. ;3;Inst. eléct. en loc. Com/indust/tall/depo/espect Púb x los sig 100 Kw, x cada Kw;28-3;05.02.66;0;cantidad en el rango;-
+Inst. eléctricas en Loc. Com./indust/tall/depos./espectáculos púb. ;4;Inst. eléct. en loc. Com/indust/tall/depo/espect Púb x los sig 150 Kw, x cada Kw;28-4;05.02.67;0;cantidad en el rango;-
+Inst. eléctricas en Loc. Com./indust/tall/depos./espectáculos púb. ;5;Inst. eléct. en loc. Com/indust/tall/depo/espect Púb x los sig 200 Kw, x cada Kw;28-5;05.02.68;0;cantidad en el rango;-
+Inst. eléctricas en Loc. Com./indust/tall/depos./espectáculos púb. ;6;Inst. eléct. en loc. Com./indust./tall./depós./espect. Púb. x cada Kw excedente;28-6;05.02.69;0;cantidad en el rango;-
+Inst. electrom. en loc. de com, indust, tall, depos. y espect. Púb. hasta 30 Kw;1;Inst. electrom. en loc. de com, indust, tall, depos. y espect. Púb. hasta 30 Kw;29-1;05.02.70;detalle;modulos impMIn;1405
+Inst. electrom. en loc. de com, indust, tall, depos. y espect. Púb. hasta 30 Kw;2;Inst. electrom. en loc. de com, ind,tall, dep y esp. Púb. x sig. 20 Kw x cada Kw;29-2;05.02.71;0;cantidad en el rango;-
+Inst. electrom. en loc. de com, indust, tall, depos. y espect. Púb. hasta 30 Kw;3;Inst. electrom. loc. de com, ind,tall, dep y esp. Púb. x sig. 150 Kw x cada Kw;29-3;05.02.72;0;cantidad en el rango;-
+Inst. electrom. en loc. de com, indust, tall, depos. y espect. Púb. hasta 30 Kw;4;Inst. electrom. loc. de com, ind,tall, dep y esp. Púb. x sig. 300 Kw x cada Kw;29-4;05.02.73;0;cantidad en el rango;-
+Inst. electrom. en loc. de com, indust, tall, depos. y espect. Púb. hasta 30 Kw;5;Inst. electrom. loc. de com, ind, tall, dep y esp. Púb. x cada Kw excedente;29-5;05.02.74;0;cantidad en el rango;-
+Inst. térmicas. Calderas agua caliente/vapor a bja presión. ;1;Inst. térmicas. Calderas agua caliente/vapor a bja presión. Hta5 m2 sup.calef.;30-1;05.02.75;detalle;modulos impMIn;1405
+Inst. térmicas. Calderas agua caliente/vapor a bja presión. ;2;Inst. térm. Calderas agua caliente/vapor a bja presión. X sig. 45m2, x cada m2;30-2;05.02.76;0;cantidad en el rango;-
+Inst. térmicas. Calderas agua caliente/vapor a bja presión. ;3;Inst. térm. Calderas agua caliente/vapor a bja presión. X excedente, x cada m2;30-3;05.02.77;0;cantidad en el rango;-
+Inst.térmicas. Calderas de vapor de alta presión.;1;Inst.térmicas. Calderas de vapor de alta presión. Hasta 5 m2 de sup. Calef.;31-1;05.02.78;detalle;modulos impMIn;1405
+Inst.térmicas. Calderas de vapor de alta presión.;2;Inst. térmicas. Calderas de vapor de alta presión  Por los sig. 25m2, x cada m2;31-2;05.02.79;0;cantidad en el rango;-
+Inst.térmicas. Calderas de vapor de alta presión.;3;Inst. térmicas. Calderas de vapor de alta presión  Por el excedente, x cada m2;31-3;05.02.80;0;cantidad en el rango;-
+0;1;P/rad/serpen ind.sup.radiante u otro artef. agua caliente/vapor. P/1ros 10 elem.;32-1;05.02.81;detalle;modulos impMIn;1320
+P/rad/serpen ind.sup.radiante u otro artef. agua caliente/vapor. ;2;P/rad/serp ind.sup.radian/otro artef. agua cal./vapor x sig. 20 elem, x c/elem.;32-2;05.02.82;0;cantidad en el rango;-
+P/rad/serpen ind.sup.radiante u otro artef. agua caliente/vapor. ;3;P/rad/serp ind.sup.radian/otro artef. agua cal./vapor x sig. 40 elem, x c/elem.;32-3;05.02.83;0;cantidad en el rango;-
+P/rad/serpen ind.sup.radiante u otro artef. agua caliente/vapor. ;4;P/rad/serp ind.sup.radian/otro artef. agua cal./vapor x sig. 80 elem, x c/elem.;32-4;05.02.84;0;cantidad en el rango;-
+P/rad/serpen ind.sup.radiante u otro artef. agua caliente/vapor. ;5;P/rad/serp ind.sup.radian/otro artef. agua cal./vapor x cada elemento excedente;32-5;05.02.85;0;cantidad en el rango;-
+Máquinas que reciben vapor.;1;Máquinas que reciben vapor. Por los primeros diez (10) elementos;33-1;05.02.86;detalle;modulos impMIn;1320
+Máquinas que reciben vapor.;2;Máquinas que reciben vapor. Por los sig. 20 elementos, por cada elemento;33-2;05.02.87;0;cantidad en el rango;-
+Máquinas que reciben vapor.;3;Máquinas que reciben vapor. Por los sig. 40 elementos, por cada elemento;33-3;05.02.88;0;cantidad en el rango;-
+Máquinas que reciben vapor.;4;Máquinas que reciben vapor. Por los sig. 80 elementos, por cada elemento;33-4;05.02.89;0;cantidad en el rango;-
+Máquinas que reciben vapor.;5;Máquinas que reciben vapor. Por cada elemento excedente;33-5;05.02.90;0;cantidad en el rango;-
+;;;;;;;
+;;;;;;;
+;;;;;;;
+Instalacion de Montacargas.;1;Instalacion de Montacargas. Montacargas que transportan hasta 300 kg. de carga;34-1;05.02.94;detalle;cantidad total * SI_RANGO;-
+Instalacion de Montacargas.;2;Instalacion de Montacargas que transportan mas de 300 kg hasta 500 Kg de carga;34-2;05.02.95;0;cantidad total * SI_RANGO;-
+Instalacion de Montacargas.;3;Instalacion de Montacargas. Montacargas que transportan mas de 500 kg. de carga;34-3;05.02.96;0;cantidad total * SI_RANGO;-
+;;;;;;;
+;;;;;;;
+Derechos de registro y fiscalización de instalaciones sanitarias internas. Uso residencial;1;Derechos de registro y fiscalización de instalaciones sanitarias internas. Uso residencial;35-1;05.03.01;Total;modulos Importetotal sin/rec;1555
+Derechos de registro y fiscalización de instalaciones sanitarias internas. Uso no residencial;1;Derechos de registro y fiscalización de instalaciones sanitarias internas. Uso no residencial;36-1;05.03.02;Total;modulos Importetotal sin/rec;3165
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+Derechos por Delin. y construcc. y Tasa por Verificac. de Obra. 1% Valor de obra;1;Derechos por Delin. y construcc. y Tasa por Verificac. de Obra. 1% Valor de obra;37-1;05.11.01;Total;Importetotal sin/rec;-
+Recargo 500% sobre Derechos por Delin. y construcc. p/obras antirreglamentarias;1;Recargo 500% sobre Derechos por Delin. y construcc. p/obras antirreglamentarias;38-1;05.11.02;adicional total;Recargo_ antireglamentaria;-
+Recargo 250% sobre Derechos por Delin. y construcc. p/obras reglamentarias registradas en el art. 6.3.1.2 del Cód. de Edificación;1;Recargo 250% sobre Derechos por Delin. y construcc. p/obras reglamentarias registradas en el art. 6.3.1.2 del Cód. de Edificación;39-1;05.11.03;adicional total;Recargo_ nodeclaradas;-
+Valor de Obra-Viviendas-Categoria 1;1;Valor de Obra-Viviendas-Categoria 1;40-1;05.11.04;Total;cantidad total;-
+Valor de Obra-Viviendas-Categoria 2;1;Valor de Obra-Viviendas-Categoria 2;41-1;05.11.05;Total;cantidad total;-
+Valor de Obra-Viviendas-Categoria 3;1;Valor de Obra-Viviendas-Categoria 3;42-1;05.11.06;Total;cantidad total;-
+Valor de Obra-Viviendas-Categoria 4;1;Valor de Obra-Viviendas-Categoria 4;43-1;05.11.07;Total;cantidad total;-
+Valor de Obra-Construcciones para la Atencion de la salud y hospitalaria-Categoria 1;1;Valor de Obra-Construcciones para la Atencion de la salud y hospitalaria-Categoria 1;44-1;05.11.08;Total;cantidad total;-
+Valor de Obra-Construcciones para la Atencion de la salud y hospitalaria-Categoria 2;1;Valor de Obra-Construcciones para la Atencion de la salud y hospitalaria-Categoria 2;45-1;05.11.09;Total;cantidad total;-
+Valor de Obra-Construcciones para la Atencion de la salud y hospitalaria-Categoria 3;1;Valor de Obra-Construcciones para la Atencion de la salud y hospitalaria-Categoria 3;46-1;05.11.10;Total;cantidad total;-
+Valor de Obra-Construcciones para la Atencion de la salud y hospitalaria-Categoria 4;1;Valor de Obra-Construcciones para la Atencion de la salud y hospitalaria-Categoria 4;47-1;05.11.11;Total;cantidad total;-
+Valor de obra-Centros de recreación y bancos- Categoria  1;1;Valor de obra-Centros de recreación y bancos- Categoria  1;48-1;05.11.12;Total;cantidad total;-
+Valor de obra-Centros de recreación y bancos- Categoria  2;1;Valor de obra-Centros de recreación y bancos- Categoria  2;49-1;05.11.13;Total;cantidad total;-
+Valor de Obra- Escritorios,negocios,salones de actos, galeria comerciales e institutos- Categoria 1;1;Valor de Obra- Escritorios,negocios,salones de actos, galeria comerciales e institutos- Categoria 1;50-1;05.11.14;Total;cantidad total;-
+Valor de Obra- Escritorios,negocios,salones de actos, galeria comerciales e institutos- Categoria 2;1;Valor de Obra- Escritorios,negocios,salones de actos, galeria comerciales e institutos- Categoria 2;51-1;05.11.15;Total;cantidad total;-
+Valor de Obra- Escritorios,negocios,salones de actos, galeria comerciales e institutos- Categoria 3;1;Valor de Obra- Escritorios,negocios,salones de actos, galeria comerciales e institutos- Categoria 3;52-1;05.11.16;Total;cantidad total;-
+Valor de Obra-Garage, depósitos, escuela,templos,labortorio,etc.(unica categoria) Categoria 1;1;Valor de Obra-Garage, depósitos, escuela,templos,labortorio,etc.(unica categoria) Categoria 1;53-1;05.11.17;Total;cantidad total;-
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;

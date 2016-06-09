@@ -1,0 +1,60 @@
+<html>
+<headers>
+<link rel="shortcut icon" type="image/png" href="{{ asset('bastrap3/favicon.png') }}"/>
+        <link rel="stylesheet" href="{{ asset('bastrap3/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('bastrap3/bastrap.css') }}">
+
+
+<body style ="">
+
+<div id="tablecontent" >
+
+<table class="table" style=
+						width: 100%;
+					    max-width: 100%;
+					    margin-bottom: 20px;
+					    background-color: transparent;
+					    white-space: normal;
+					    line-height: normal;
+					    font-weight: normal;
+					    font-size: medium;
+					    font-variant: normal;
+					    font-style: normal;
+					    color: -webkit-text;
+					    text-align: start;
+					    display: table;
+					    border-color: grey;
+					    
+					    ">
+	<tr style = "display: table-row;
+				 vertical-align: inherit;
+				 border-color: inherit;
+				 font-family: OpenSans, Helvetica, Arial, sans-serif;
+				    "
+	>
+		{% for columna in array.metadata   %}
+			<th
+				style="border-top: solid 1px #ccc;padding: 8px;line-height: 1.42857143; vertical-align: top;text-align: left;font-weight: bold;    display: table-cell;"
+			> {{ columna.label }}</th>
+		{% endfor %}
+	</tr>
+	{% for fila in array.data   %}
+		<tr>
+			{% for col in fila.columns   %}
+			<td
+				style="border-top: solid 1px #ccc;padding: 8px;line-height: 1.42857143;vertical-align: top;display: table-cell;"
+			> {{ col }}</td>
+			{% endfor %}
+		</tr>
+	{% endfor %}
+	<tr>
+		<td
+			style="border-top: solid 1px #ccc;padding: 8px;line-height: 1.42857143;vertical-align: top;display: table-cell;"
+
+			colspan="{{ array.metadata|length }}"
+		> Total: {{ final }}</td>
+	</tr>
+</table>
+</div>
+</body>
+</html>

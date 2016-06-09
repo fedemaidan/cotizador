@@ -1,0 +1,20 @@
+# Learn more about services, parameters and containers at
+# http://symfony.com/doc/current/book/service_container.html
+parameters:
+    primary_service.class: AppBundle\Service\CotizadorService
+    importacion_service.class: AppBundle\Service\ImportacionService
+    bui_service.class: AppBundle\Service\BUIService
+
+services:
+    primary_service:
+        class: %primary_service.class%
+        arguments:
+            { container: @service_container, entityManager: "@doctrine.orm.entity_manager" }
+    importacion_service:
+        class: %importacion_service.class%
+        arguments:
+            { container: @service_container, entityManager: "@doctrine.orm.entity_manager" }
+    bui_service:
+        class: %bui_service.class%
+        arguments:
+            { container: @service_container, entityManager: "@doctrine.orm.entity_manager" }

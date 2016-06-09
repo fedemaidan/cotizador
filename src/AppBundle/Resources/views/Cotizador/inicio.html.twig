@@ -1,0 +1,198 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}AppBundle:Cotizador:inicio{% endblock %}
+
+{% block pageTitle %} Carga de presupuesto{% endblock %}
+{% block body %}
+<div class="page-header col-md-12" >
+		<h1>Datos director</h1>
+		<p> Debe completar todos los campos</p>
+		<div class="form-group col-md-4">
+			<label for="nombreDirector"> Nombre </label>
+			<input 	class="form-control"  id="nombreDirector" type="text"  {% if datos is defined %} value="{{ datos.nombreDirector }}" {% endif %}>
+			</input>
+		</div>
+		<div class="form-group col-md-4">
+			<label for="cuitDirector"> Cuit </label>
+			<input 	class="form-control"  id="cuitDirector" type="text"  {% if datos is defined %} value="{{ datos.cuitDirector}}" {% endif %}></input>
+		</div>
+		<div class="form-group col-md-4">
+			<label for="matricula"> Matricula </label>
+			<input 	class="form-control"  id="matricula" type="text"  
+			{% if datos is defined%} value="{{ datos.matricula}}" {% endif %}></input>
+		</div>
+		<div class="form-group col-md-4">
+			<label for="telefono"> Teléfono </label>
+			<input 	class="form-control"  id="telefono" type="text"  
+			{% if datos is defined%} value="{{ datos.telefono}}" {% endif %}></input>
+		</div>
+		<div class="form-group col-md-4">
+			<label for="mail"> Mail </label>
+			<input 	class="form-control"  id="mail" type="text"  
+			{% if datos is defined%} value="{{ datos.mail}}" {% endif %}></input>
+		</div>
+		<div class="form-group col-md-4">
+			<label for="consejo"> Consejo </label>
+			<input 	class="form-control"  id="consejo" type="text"
+			{% if datos is defined%} value="{{ datos.consejo}}" {% endif %}></input>
+		</div>
+		<div class="form-group col-md-4">
+			<label for="domicilioDirector"> Domicilio </label>
+			<input 	class="form-control"  id="domicilioDirector" type="text"
+			{% if datos is defined%} value="{{ datos.domicilioDirector}}" {% endif %}></input>
+		</div>
+		<div class="form-group col-md-4">
+			<label for="cpDirector"> Código Postal </label>
+			<input 	class="form-control"  id="cpDirector" type="text"
+			{% if datos is defined%} value="{{ datos.cpDirector}}" {% endif %}></input>
+		</div>
+		<div class="form-group col-md-4">
+			<label for="localidad"> Localidad </label>
+			<input 	class="form-control"  id="localidad" type="text"
+			{% if datos is defined%} value="{{ datos.localidad}}" {% endif %}></input>
+		</div>
+
+
+
+	<h1>Datos propietario</h1>
+	<p> Debe completar todos los campos</p>
+	<div class="form-group col-md-4">
+		<label for="nombrePropietario"> Nombre </label>
+		<input 	class="form-control"  id="nombrePropietario" type="text" 
+		{% if datos is defined%} value="{{ datos.nombrePropietario}}" {% endif %}></input>
+	</div>
+	<div class="form-group col-md-4">
+		<label for="cuitPropietario"> Cuit </label>
+		<input 	class="form-control"  id="cuitPropietario" type="text"  
+		{% if datos is defined%} value="{{ datos.cuitPropietario}}" {% endif %}></input>
+	</div>
+	<div class="form-group col-md-4">
+		<label for="domicilioPropietario"> Domicilio </label>
+		<input 	class="form-control"  id="domicilioPropietario" type="text" 
+		{% if datos is defined%} value="{{ datos.domicilioPropietario}}" {% endif %}></input>
+	</div>
+
+	<h1>Datos obra</h1>
+	<p> Debe completar todos los campos</p>
+	<div class="form-group col-md-4">
+		<label for="ubicacion"> Ubicación </label>
+		<input 	class="form-control"  id="ubicacion" type="text"  
+		{% if datos is defined%} value="{{ datos.ubicacion}}" {% endif %}></input>
+	</div>
+	<div class="form-group col-md-2">
+		<label for="seccion"> Sección </label>
+		<input 	class="form-control"  id="seccion" type="text"  
+		{% if datos is defined%} value="{{ datos.seccion}}" {% endif %}></input>
+	</div>
+	<div class="form-group col-md-2">
+		<label for="manzana"> Manzana </label>
+		<input 	class="form-control"  id="manzana" type="text"  
+		{% if datos is defined%} value="{{ datos.manzana}}" {% endif %}></input>
+	</div>
+	<div class="form-group col-md-2">
+		<label for="parcela"> Parcela </label>
+		<input 	class="form-control"  id="parcela" type="text" 
+		{% if datos is defined%} value="{{ datos.parcela}}" {% endif %}></input>
+	</div>
+	<div class="form-group col-md-2">
+		<label for="tipo"> Tipo de presupuesto </label>
+		<select class="form-control"  id="tipo" type="text">
+		<option value="">Seleccionar ..</option>
+		{% for tipo in tipos   %}
+			<option value="{{ tipo.id }}"
+			{% if datos is defined%} 
+			{% if datos.tipo == tipo.id%} selected{% endif %}	
+			{% endif %}	
+			>{{ tipo.nombre }}</option>
+		{% endfor %}
+		</select>
+	</div>
+
+	<div class="form-group text-right">
+		<button class="btn btn-success" onclick="confirmarDatosDelPresupuesto()" id ="confirmar" data-url="{{ urlConfirmar }}"> Siguiente</button>
+	</div>
+</div>
+
+
+<div class="col-md-12 itemsContext" hidden>
+	<div class="nuevoItem col-md-12">
+	<h1>Items</h1>
+	<div class="form-group col-md-4">
+		<select 	class="form-control"  id="categoria" type="text"  data-parent="">
+		</select>
+		</div>
+	<div class="form-group col-md-4">
+		<select 	class="form-control"  id="obra"  type="text"  placeholder="Obra..." ></select>	
+		</div>
+	<div class="form-group col-md-4">
+		<button class="btn btn-info " style="width:100%;" onclick="add()"> Agregar</button>
+		</div>
+	</div>
+
+	<div id="tablecontent" data-url="{{ urlDatos }}"></div>
+
+	<div class="form-group text-right">
+			<button class="btn btn-info" onclick="volverPrespuesto()" id ="confirmar" data-url="{{ urlConfirmar }}"> Atrás</button>
+			<button class="btn btn-success" onclick="confirmar()" id ="confirmar" data-url="{{ urlConfirmar }}"> Confirmar</button>
+	</div>
+
+</div>
+
+<div class="form-group text-center col-md-12 generadorPDF" hidden>
+		<h1>Validar captcha</h1>
+		<div class="form-group text-center" style="margin-top:20px;">
+			<div class="input-group">
+				<span class="input-group-addon secure-code-refresh" title="Click para recargar el codigo"><span class="glyphicon glyphicon-refresh"></span></span>
+				<img src="{{ path('secure_code') ~ '?' ~ random(1000) }}" class=" secure-code-src col-md-12" alt="Codigo de seguridad" title="Codigo de seguridad" class="secure-code-src"/>
+				<p id="mensajeCaptcha"></p>
+			</div>
+		</div>
+
+		<div class="form-group text-center">
+			<input type="text" id="captcha" size="10" class="form-control" placeholder="Ingrese el codigo de la imagen" required name="_captcha" style="margin-top:10px" autocomplete="off">
+		</div>
+
+		<div class="form-group text-right">
+			<button class="btn btn-info" onclick="volverItems()" id="" > Atrás</button>
+			<button class="btn btn-success" onclick="generarPDF()" id ="generarPDF" data-url="{{ urlConfirmar }}"> 
+			Generar PDF</button>
+			<button class="btn btn-success" id="btnBoleta" onclick="generarBoleta()" disabled> Generar boleta </button>
+	</div>
+
+	</div>
+{% endblock %}
+
+{% block controllerCss %}
+		<style>
+			body { font-family:'lucida grande', tahoma, verdana, arial, sans-serif; font-size:11px; }
+			h1 { font-size: 15px; }
+			a { color: #548dc4; text-decoration: none; }
+			a:hover { text-decoration: underline; }
+			table.testgrid { border-collapse: collapse; border: 1px solid #CCB; width: 100%; margin:10px }
+			table.testgrid td, table.testgrid th { padding: 5px; border: 1px solid #E0E0E0; }
+			table.testgrid th { background: #E5E5E5; text-align: left; }
+			input.invalid { background: red; color: #FDFDFD; }
+			td { text-align: center; }
+		</style>
+		
+{% endblock %}
+
+{% block controllerJs %}
+
+	
+        <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
+        <script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
+        {% javascripts '@AppBundle/Resources/public/js/editablegrid/*' %}
+    		<script src="{{ asset_url }}"></script>
+		{% endjavascripts %}
+		{% javascripts '@AppBundle/Resources/public/js/bootstrap3-typeahead.min.js' %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+ {% endjavascripts %}
+ 
+{% javascripts '@AppBundle/Resources/public/js/cotizador.js' %}
+    		<script src="{{ asset_url }}"></script>
+		{% endjavascripts %}
+		
+		
+{% endblock %}
+        

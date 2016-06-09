@@ -1,0 +1,16 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: cotizacion_permisos
+    database_user: root
+    database_password: null
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    secret: cf2b924a65f5cea2e725767da93cc6dc2517f02d
+    version: '0.2'
+    bui_api: 'http://10.73.100.59:6748/service/api/BUI/'
+    user_bui: "rmonicat"
+    password_bui: "2016052313407118"

@@ -1,0 +1,89 @@
+<html>
+<headers>
+	<meta name="tipo_contenido"  content="text/html;" http-equiv="content-type" charset="utf-8">
+	<style>
+			body { font-family:'lucida grande', tahoma, verdana, arial, sans-serif; font-size:11px; }
+			h1 { font-size: 15px; }
+			a { color: #548dc4; text-decoration: none; }
+			a:hover { text-decoration: underline; }
+			table.testgrid { border-collapse: collapse; border: 1px solid #CCB; width: 100%; margin:10px }
+			table.testgrid td, table.testgrid th { padding: 5px; border: 1px solid #E0E0E0; }
+			table.testgrid th { background: #E5E5E5; text-align: left; }
+			input.invalid { background: red; color: #FDFDFD; }
+			table.tablaDatos td {
+				width: 25%
+			}
+			.alpie {
+				  position: fixed;
+				  bottom: 0px;
+				  text-align: center;
+				}
+		</style>
+</headers>
+<body >
+
+<h3>Datos director</h3>
+
+<table class="tablaDatos" style="width:100%;" >
+	<tr>
+		<td>Nombre: {{ presupuesto.nombreDirector }}</td>
+		<td>Cuit: {{ presupuesto.cuitDirector }}</td>
+		<td>Matricula: {{ presupuesto.matricula }}</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Mail: {{ presupuesto.mail }}</td>
+		<td>Teléfono: {{ presupuesto.telefono }}</td>
+		<td>Consejo: {{ presupuesto.consejo }}</td>
+		<td></td>
+		
+	</tr>
+</table>
+
+<h3>Datos propietario</h3>
+<table class="tablaDatos" style="width:100%;" >	
+	<tr>
+		<td>Nombre: {{ presupuesto.nombrePropietario }}</td>
+		<td>Cuit: {{ presupuesto.cuitPropietario }}</td>
+		<td>Domicilio: {{ presupuesto.domicilio }}</td>
+		<td></td>
+	</tr>
+</table>
+
+<h3>Datos obra</h3>
+<table class="tablaDatos" style="width:100%;" >	
+	<tr>
+		<td>Ubicación: {{ presupuesto.ubicacion }}</td>
+		<td>Sección: {{ presupuesto.seccion }}</td>
+		<td>Manzana: {{ presupuesto.manzana }}</td>
+		<td>Parcela: {{ presupuesto.parcela }}</td>
+	</tr>
+</table>
+
+<div id="tablecontent" class="container">
+
+<table class="table testgrid" >
+	<tr >
+		{% for columna in array.metadata   %}
+			<th > {{ columna.label }}</th>
+		{% endfor %}
+	</tr>
+	{% for fila in array.data   %}
+		<tr>
+			{% for col in fila.columns   %}
+			<td > {{ col }}</td>
+			{% endfor %}
+		</tr>
+	{% endfor %}
+	<tr>
+		<td colspan="{{ array.metadata|length }}" style="text-align: right"
+		> Total: ${{ final }}</td>
+	</tr>
+</table>
+<div class="alpie">
+---------------<br>
+	Firma
+</div>
+</div>
+</body>
+</html>
